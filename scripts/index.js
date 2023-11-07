@@ -15,6 +15,8 @@ async function calcPrice() {
   document.querySelector("#answer").innerHTML = Math.ceil(answer);
 }
 
-input.addEventListener("change", (el) => {
+document.addEventListener("DOMContentLoaded", function(event) {
+  input.addEventListener("change", (el) => {
   calcPrice();
+});
 });
