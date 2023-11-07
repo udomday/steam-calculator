@@ -4,19 +4,21 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link href="./styles/index.css" rel="stylesheet" />
   </head>
   <body>
-    <div>
+    <div class="container flex flex-column">
       <div>
         <span>Введите цену игры в рублях</span>
         <input id="gameprice" type="number" />
       </div>
       <div>
-        <button onclick="calcPrice()">Рассчитать</button>
+        <button class="bttn-calc" onclick="calcPrice()">Рассчитать</button>
+        <span>или нажмите "Enter"</span>
       </div>
       <div>
         <span>Вам нужно пополнить киви на </span>
-        <span id="answer">500 </span>
+        <span id="answer">... </span>
         <span>рублей</span>
       </div>
     </div>
